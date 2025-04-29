@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<style>
+.buscador{
+  display: grid;
+  grid-template-rows: auto auto;
+  position: relative;
+  left: 680px;
+  width: 25px;
+  text-align: center;
+}
+span{
+  text-align: center;
+}
+
+#carta{
+  display: grid;  
+  grid-template-rows: auto auto ;
+  background-color: yellow;
+  align-items: baseline;
+  width: 450px;
+  position: relative;
+  left: 550px;
+  
+  }
+
+img{
+
+  height: 250px;
+  width: 250px;
+  position: relative;
+  left: 100px;
+  border: 5px solid #000;
+  
+}
+
+#datos{
+  display: grid;
+  grid-template-columns: auto  ; 
+  position: relative;
+}
+
+#stats{
+  display: grid;
+  grid-template-columns: 0.5fr 0.2fr 1fr 0.2fr ;
+grid-template-rows: 1fr 1fr;
+  text-align: start;
+}
+</style>
+
+
+<body id="cuerpo">
+
+  
+
+  
+<div id="carta"> 
+    <div id="encabezado"></div>
+    <div id="imagen"></div>
+    <div id="datos"><div id="stats"></div></div>
+</div>
+
+<div class="buscador">
+  Busca tu pokemon
+  <input type="text" id="nombre">
+  <button id="boton">
+  buscar
+</button>
+</div>
+<script src="index.js"></script>
+
+</body>
+</html>
